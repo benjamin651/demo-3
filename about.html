@@ -1,139 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | GreenEdge Property Care</title>
-
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-
-  <script src="components/navbar.js"></script>
-  <script src="components/footer.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | John's Lawn Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
+<body class="font-sans">
+    <custom-navbar></custom-navbar>
 
-<body class="bg-[#1b9645] text-white font-sans">
-  <custom-navbar></custom-navbar>
-
-  <!-- HERO -->
-  <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-    <div
-      class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586107679627-b73d3dd34a73?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
-    </div>
-
-    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center mt-20">
-      <div class="bg-black/60 backdrop-blur-sm p-10 rounded-2xl shadow-xl">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">
-          About GreenEdge Property Care
-        </h1>
-        <p class="text-xl text-green-100">
-          A local team dedicated to dependable, high-quality outdoor property care.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- MAIN CONTENT -->
-  <main class="py-24 px-4 md:px-8 lg:px-16">
-    <div class="max-w-5xl mx-auto space-y-20">
-
-      <!-- OUR STORY -->
-      <section class="bg-[#F4B73F] text-black p-10 md:p-14 rounded-2xl shadow-lg">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-          <img
-            src="https://huggingface.co/spaces/Matb3nj1/clear-cut-crew-lawn-masters/resolve/main/images/group%20pic.jpg"
-            alt="GreenEdge team working outdoors"
-            class="rounded-xl shadow-md w-full h-auto object-cover"
-          />
-
-          <div>
-            <h2 class="text-3xl font-bold mb-6">Our Story</h2>
-            <p class="mb-4 text-lg">
-              GreenEdge Property Care was built with a simple mission: provide
-              reliable, detail-focused property maintenance that homeowners can
-              trust season after season.
-            </p>
-            <p class="text-lg">
-              What began as a small local operation has grown into a committed
-              team that values craftsmanship, consistency, and long-term client
-              relationships.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- VALUES -->
-      <section class="bg-[#F4B73F] text-black p-10 md:p-14 rounded-2xl shadow-lg">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Values</h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-xl text-center shadow-sm">
-            <div class="bg-[#2d7d32] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i data-feather="heart"></i>
+    <main class="container mx-auto px-4 py-16">
+        <section class="max-w-4xl mx-auto" style="background-color: #1c5e20;">
+            <h1 class="text-4xl font-bold mb-8 text-center text-white ">About John's Lawn Care</h1>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16 rounded-lg mb-16" style="background-color: #e8f5e9;">
+                <div class="p-8 rounded-lg mb-16">
+                    <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+                    <p class="mb-4">Founded in 2005 by John, John’s Lawn Care began as a small, local lawn care service. Driven by a passion for creating beautiful outdoor spaces and a dedication to quality, we have grown to serve clients across multiple communities.</p>
+                    <p>What started as a one-person operation has grown into a team of skilled professionals, yet we remain committed to our roots, delivering personalized, reliable service with meticulous attention to detail.</p>
+                </div>
+                <img src="https://huggingface.co/spaces/Matb3nj1/clear-cut-crew-lawn-masters/resolve/main/images/group%20pic.jpg" alt="John's Lawn Care" class="w-full h-auto rounded-lg" style="transform: translateX(-0.8cm);">
+</div>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Care</h3>
-            <p class="text-gray-700">
-              Every property is treated with the same attention and respect we’d
-              give our own.
-            </p>
-          </div>
 
-          <div class="bg-white p-8 rounded-xl text-center shadow-sm">
-            <div class="bg-[#2d7d32] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i data-feather="shield"></i>
+            <div class="p-8 rounded-lg mb-16" style="background-color: #e8f5e9;">
+                <h2 class="text-2xl font-bold mb-6 text-center">Our Mission</h2>
+                <p class="text-center max-w-3xl mx-auto">To enhance outdoor living spaces through professional lawn care and landscaping services that combine quality craftsmanship, environmental responsibility, and exceptional customer service.</p>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Integrity</h3>
-            <p class="text-gray-700">
-              Clear communication, honest pricing, and dependable service.
-            </p>
-          </div>
 
-          <div class="bg-white p-8 rounded-xl text-center shadow-sm">
-            <div class="bg-[#2d7d32] text-white w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i data-feather="star"></i>
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold mb-8 text-center text-white">Meet Our Team</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="http://static.photos/people/640x360/2" alt="Team Member" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">John Micheal</h3>
+                            <p class="text-primary-600 mb-3">Founder & Lead Technician</p>
+                            <p class="text-gray-600">With over 18 years in the industry, John ensures every project meets his high standards.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="http://static.photos/people/640x360/3" alt="Team Member" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">Ethan Monroe</h3>
+                            <p class="text-primary-600 mb-3">Landscape Designer</p>
+                            <p class="text-gray-600">Ethan's creative vision brings our clients' dream landscapes to life.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="http://static.photos/people/640x360/4" alt="Team Member" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">Sophia Hayes</h3>
+                            <p class="text-primary-600 mb-3">Maintenance Supervisor</p>
+                            <p class="text-gray-600">Sophia leads our lawn maintenance team with precision and care.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Excellence</h3>
-            <p class="text-gray-700">
-              We continually refine our process to deliver consistent, high-quality
-              results.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <!-- DIFFERENCE -->
-      <section class="bg-[#F4B73F] text-black p-10 md:p-14 rounded-2xl shadow-lg text-center">
-        <h2 class="text-3xl font-bold mb-6">What Sets Us Apart</h2>
-        <div class="max-w-3xl mx-auto text-lg space-y-4">
-          <p>
-            We aren’t a large, impersonal company. We focus on relationships,
-            reliability, and knowing our clients by name.
-          </p>
-          <p>
-            Our local expertise, professional equipment, and disciplined systems
-            allow us to deliver consistent results — without cutting corners.
-          </p>
-        </div>
-      </section>
+            <div class="bg-primary-100 rounded-lg p-8">
+                <h2 class="text-2xl font-bold mb-4 text-center text-white">Why Choose Us?</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Our Values</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-white mr-2 mt-1"></i>
+                                <h2 class="text-white">Commitment to quality in every job</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-white mr-2 mt-1"></i>
+                                <h2 class="text-white">Environmentally responsible practices</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-white mr-2 mt-1"></i>
+                                <h2 class="text-white">Honest, transparent pricing</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-white">Our Promise</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-white mr-2 mt-1"></i>
+                                <h2 class="text-white">Reliable, on-time service</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-white mr-2 mt-1"></i>
+                                <h2 class="text-white">Fully licensed and insured</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-white mr-2 mt-1"></i>
+                                <h2 class="text-white">100% satisfaction guarantee</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-      <!-- CTA -->
-      <section class="text-center">
-        <h2 class="text-3xl font-bold mb-6">Let’s Work Together</h2>
-        <p class="text-lg mb-8 text-green-100">
-          Ready to experience professional property care done right?
-        </p>
-        <a
-          href="contact.html"
-          class="inline-block bg-[#F4B73F] hover:bg-[#F8C96A] text-black font-bold py-4 px-10 rounded-full shadow-xl transition">
-          Contact Us Today
-        </a>
-      </section>
+    <custom-footer></custom-footer>
 
-    </div>
-  </main>
-
-  <custom-footer></custom-footer>
-  <script>feather.replace();</script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>

@@ -3,184 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | GreenEdge Property Care</title>
+    <title>Services | John's Lawn Care</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="font-sans">
+    <custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-16">
+        <section class="max-w-6xl mx-auto" style="background-color: #1c5e20;">
+            <h1 class="text-4xl font-bold mb-4 text-center text-white">Our Services</h1>
+            <p class="text-xl text-center mb-12 max-w-3xl mx-auto text-white">Comprehensive lawn care and landscaping solutions tailored to your property's needs.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div id="lawn-maintenance" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-primary-100 p-3 rounded-full">
+                            <i data-feather="home" class="text-primary-600"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Lawn Maintenance</h2>
+                    </div>
+                    <p class="mb-6">Regular, professional care to keep your lawn healthy and vibrant throughout the growing season.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Weekly or bi-weekly mowing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Precision edging & trimming</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Seasonal fertilization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Weed control</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Clipping removal</span>
+                        </li>
+                    </ul>
+                    <a href="#quote" class="inline-block text-black px-6 py-2 rounded-lg hover:bg-primary-700 transition" style="background-color: #17a34a;">Get Quote</a>
+                </div>
+                
+                <div id="landscaping" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-primary-100 p-3 rounded-full">
+                            <i data-feather="layers" class="text-primary-600"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Landscaping</h2>
+                    </div>
+                    <p class="mb-6">Transform your outdoor space with custom landscape design and installation.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Custom garden designs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Planting & shrub installation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Decks & fences</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Patios & walkways</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Water features</span>
+                        </li>
+                    </ul>
+                    <a href="#quote" class="inline-block text-black px-6 py-2 rounded-lg hover:bg-primary-700 transition" style="background-color: #17a34a;">Get Quote</a>
+                </div>
+                
+                <div id="seasonal-cleanup" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-primary-100 p-3 rounded-full">
+                            <i data-feather="calendar" class="text-primary-600"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Seasonal Cleanup</h2>
+                    </div>
+                    <p class="mb-6">Prepare your property for seasonal changes with our comprehensive cleanup services.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Spring cleanup & preparation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Fall leaf removal</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Garden bed maintenance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Mulching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Winterization</span>
+                        </li>
+                    </ul>
+                    <a href="#quote" class="inline-block text-black px-6 py-2 rounded-lg hover:bg-primary-700 transition" style="background-color: #17a34a;">Get Quote</a>
+                </div>
+                
+                <div id="hedge-trimming" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="bg-primary-100 p-3 rounded-full">
+                            <i data-feather="scissors" class="text-primary-600"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold">Hedge & Shrub Care</h2>
+                    </div>
+                    <p class="mb-6">Professional trimming and maintenance for hedges, shrubs, and small trees.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Seasonal pruning</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Shaping & topiary</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Disease prevention</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Removal of dead branches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-primary-600 mr-2 mt-1"></i>
+                            <span>Fertilization for shrubs</span>
+                        </li>
+                    </ul>
+                    <a href="#quote" class="inline-block text-black px-6 py-2 rounded-lg hover:bg-primary-700 transition" style="background-color: #17a34a;">Get Quote</a>
+                </div>
+            </div>
+            
+            <div class="bg-primary-100 p-8 rounded-lg">
+                <h2 class="text-2xl font-bold mb-6 text-center text-white">Service Packages</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow text-center">
+                        <h3 class="text-xl font-bold mb-4">Basic Care</h3>
+                        <div class="text-3xl font-bold mb-4 text-primary-600">$99<span class="text-lg">/month</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li>Bi-weekly mowing</li>
+                            <li>Edging & trimming</li>
+                            <li>Clipping removal</li>
+                        </ul>
+                        <a href="quotes.html" class="inline-block bg-green-600 text-black px-4 py-2 rounded hover:bg-primary-700 transition">Get Started</a>
+</div>
+                    <div class="bg-white p-6 rounded-lg shadow text-center border-2 border-primary-600 transform scale-105">
+                        <div class="bg-primary-600 text-green-800 px-4 py-1 rounded-full inline-block mb-4 text-lg font-bold">Most Popular</div>
+                        <h3 class="text-xl font-bold mb-4">Premium Maintenance</h3>
+                        <div class="text-3xl font-bold mb-4 text-primary-600">$199<span class="text-lg">/month</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li>Weekly mowing</li>
+                            <li>Precision edging</li>
+                            <li>Seasonal fertilization</li>
+                            <li>Weed control</li>
+                        </ul>
+                        <a href="#quote" class="inline-block bg-green-600 text-black px-4 py-2 rounded hover:bg-primary-700 transition">Get Started</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow text-center">
+                        <h3 class="text-xl font-bold mb-4">Complete Care</h3>
+                        <div class="text-3xl font-bold mb-4 text-primary-600">$299<span class="text-lg">/month</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li>Weekly mowing</li>
+                            <li>Full edging & trimming</li>
+                            <li>Seasonal treatments</li>
+                            <li>Hedge trimming</li>
+                            <li>2 seasonal cleanups</li>
+                        </ul>
+                        <a href="#quote" class="inline-block bg-green-600 text-black px-4 py-2 rounded hover:bg-primary-700 transition">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
-</head>
-
-<body class="bg-[#F9FBF9] text-[#1F2937] font-sans">
-
-<custom-navbar></custom-navbar>
-
-<!-- HERO SECTION (MATCHES HOME PAGE) -->
-<section
-    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-    <div
-      class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1586107679627-b73d3dd34a73?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center">
-    </div>
-
-    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center mt-20">
-      <div class="bg-black/60 backdrop-blur-sm p-10 rounded-2xl shadow-xl">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-            Our Services
-        </h1>
-        <p class="text-xl md:text-2xl max-w-3xl text-white">
-            Comprehensive property care solutions tailored to keep your outdoor spaces beautiful and well-maintained all year round.
-        </p>
-    </div>
-</section>
-
-<!-- SERVICES CONTENT -->
-<main class="py-16 px-4 md:px-8 lg:px-16 bg-[#1b9645]">
-    <div class="max-w-6xl mx-auto">
-
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
-
-            <!-- Service 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                <div class="flex items-start">
-                    <div class="bg-[#F4B73F] text-white w-14 h-14 rounded-full flex items-center justify-center mr-6 aspect-square">
-                        <i data-feather="scissors"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold mb-3">Lawn Mowing</h2>
-                        <p class="mb-4">
-                            Regular, precise mowing with professional equipment to maintain optimal lawn health and appearance.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Weekly or bi-weekly schedules</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Edging along walkways and driveways</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Clippings removal or mulching</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                <div class="flex items-start">
-                    <div class="bg-[#F4B73F] text-white w-14 h-14 rounded-full flex items-center justify-center mr-6 aspect-square">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2v4M4.93 4.93l2.83 2.83M2 12h4M4.93 19.07l2.83-2.83M12 22v-4M19.07 4.93l-2.83 2.83M22 12h-4M19.07 19.07l-2.83-2.83"/>
-                            <circle cx="12" cy="12" r="4"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold mb-3">Seasonal Cleanups</h2>
-                        <p class="mb-4">
-                            Comprehensive preparation of your property for seasonal changes.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Spring and fall cleanups</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Leaf and debris removal</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Bed preparation and mulching</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                <div class="flex items-start">
-                    <div class="bg-[#F4B73F] text-white w-14 h-14 rounded-full flex items-center justify-center mr-6 aspect-square">
-                        <i data-feather="tool"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold mb-3">Property Maintenance</h2>
-                        <p class="mb-4">
-                            Ongoing care to keep your property looking its best.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Hedge and shrub trimming</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Weed control in beds</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Small tree pruning</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 4 -->
-            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                <div class="flex items-start">
-                    <div class="bg-[#F4B73F] text-white w-14 h-14 rounded-full flex items-center justify-center mr-6 aspect-square">
-                        <i data-feather="droplet"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold mb-3">Gutter Cleaning</h2>
-                        <p class="mb-4">
-                            Thorough gutter and downspout cleaning to prevent water damage.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Debris removal</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Downspout flushing</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i data-feather="check" class="text-[#2E7D32] mr-2 mt-1"></i>
-                                <span>Drainage inspection</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- CTA -->
-        <div class="bg-[#F4B73F] text-black p-8 rounded-xl text-center">
-            <h2 class="text-2xl font-bold mb-4">Ready to transform your property?</h2>
-            <p class="mb-6 text-lg">Get a free, no-obligation quote for any of our services.</p>
-            <a href="contact.html"
-               class="inline-block bg-[#1a9745] hover:bg-[#3B8D40] text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-lg">
-                Request a Free Quote
-            </a>
-        </div>
-
-    </div>
-</main>
-
-<custom-footer></custom-footer>
-
-<script>
-    feather.replace();
-</script>
-
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>

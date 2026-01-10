@@ -2,12 +2,42 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background-color: #1b9645;
-    background-image: linear-gradient(to bottom, #1b9645 0%, #1b9645 100%);
+    color: #1a1a1a;
+    background-color: #f8f9e6; /* Soft yellow background */
+}
+/* Green sections with yellow accents */
+section {
+    background-color: #e8f5e9; /* Light green */
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #ffd600; /* Yellow accent */
+}
+/* Heading styles with green color */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-dark);
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
-section {
-    transition: background 0.5s ease;
+h1::after, h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary);
+}
+p, li {
+    color: var(--text);
+}
+
+/* Card backgrounds */
+.bg-white {
+    background-color: #e8f5e9 !important; /* Light green */
+    border: 1px solid var(--secondary);
 }
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -18,18 +48,16 @@ section {
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: var(--primary);
     border-radius: 4px;
-    border: 1px solid white;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: white;
-    border-color: white;
+    background: var(--primary-dark);
 }
 /* Animation classes */
 .fade-in {
-    animation: fadeIn 0.5s ease-in;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -53,73 +81,75 @@ section {
 }
 
 /* Button hover effects */
-.btn-hover-grow {
-    transition: transform 0.3s ease;
-}
-
-.btn-hover-grow:hover {
-    transform: translateY(-2px);
-}
-/* Card hover effects */
-.card-hover {
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-.card-hover:hover {
-    box-shadow: 0 10px 25px -5px rgba(244, 183, 63, 0.3);
-    transform: translateY(-5px);
-}
-/* Image preview styles */
-.image-preview {
+.btn-hover {
+    transition: all 0.3s ease;
     position: relative;
-    border-radius: 0.5rem;
     overflow: hidden;
-    height: 100px;
 }
 
-.image-preview img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.btn-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.remove-image {
-    position: absolute;
-    top: 0.25rem;
-    right: 0.25rem;
-    background-color: white;
-    color: black;
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: none;
-    font-size: 0.75rem;
+
+/* Section spacing */
+.section {
+    padding: 5rem 0;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+/* Form input styles */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--secondary);
+    border-color: var(--primary);
+}
+
+input, textarea, select {
+    background-color: #f1f8e9 !important;
+    border: 1px solid var(--primary-light) !important;
+}
+/* Quote form improvements */
+#quote .border-dashed:hover {
+    border-color: var(--primary);
+}
+
+#quote button[type="submit"] {
     transition: all 0.3s ease;
 }
 
-.remove-image:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
+#quote button[type="submit"]:hover {
+    box-shadow: 0 4px 12px rgba(74, 124, 89, 0.3);
 }
-/* Hover effect styles */
-.hovered-element {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/* New color scheme */
+:root {
+    --primary: #2e7d32; /* Darker forest green */
+    --primary-light: #81c784;
+    --primary-dark: #1b5e20;
+    --secondary: #fdd835; /* Vibrant yellow */
+    --accent: #ffab00; /* Darker yellow */
+    --light: #f8f9e6; /* Creamy yellow */
+    --dark: #1a1a1a;
+    --text: #1a1a1a;
+    --text-light: #424242;
+}
+/* Image hover effects */
+.img-hover-zoom {
+    overflow: hidden;
 }
 
-/* Validation styles */
-.border-red-500 {
-    border-color: white !important;
-    animation: shake 0.5s;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+.img-hover-zoom img {
+    transition: transform .5s ease;
 }
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    20%, 60% { transform: translateX(-5px); }
-    40%, 80% { transform: translateX(5px); }
+
+.img-hover-zoom:hover img {
+    transform: scale(1.05);
 }

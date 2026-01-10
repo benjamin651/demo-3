@@ -61,11 +61,28 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Form submitted:', data);
             
             // Show success message
-            alert('Thank you for your request! We will contact you shortly with your free quote.');
-            this.reset();
-            photoPreview.classList.add('hidden');
-            photoPreview.innerHTML = '';
-        });
+            // Form submission handler
+            function submitForm(form) {
+                // Here you would typically send the data to your server
+                const formData = new FormData(form);
+                const data = {};
+                formData.forEach((value, key) => {
+                    data[key] = value;
+                });
+                console.log('Form submitted:', data);
+                
+                // Reset form
+                form.reset();
+                const photoPreview = document.getElementById('photo-preview');
+                if (photoPreview) {
+                    photoPreview.classList.add('hidden');
+                    photoPreview.innerHTML = '';
+                }
+                
+                // Allow form to submit and redirect to thank-you page
+                return true;
+            }
+});
     }
 // Animate elements when they come into view
     const animateOnScroll = function() {
