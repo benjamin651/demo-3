@@ -1,140 +1,171 @@
-<form
-  name="quote"
-  method="POST"
-  action="/thank-you.html"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  enctype="multipart/form-data"
-  class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-lg shadow-lg"
->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Quote | John's Lawn Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
 
-  <!-- netlify identifier -->
-  <input type="hidden" name="form-name" value="quote">
+<body class="font-sans">
+    <custom-navbar></custom-navbar>
 
-  <!-- honeypot -->
-  <p class="hidden">
-    <label>
-      don’t fill this out:
-      <input type="text" name="bot-field">
-    </label>
-  </p>
+    <main class="container mx-auto px-4 py-16">
+        <section class="max-w-4xl mx-auto bg-green-800 p-8 rounded-lg">
 
-  <!-- name -->
-  <div>
-    <label for="name" class="block text-gray-700 font-medium mb-2">
-      full name *
-    </label>
-    <input
-      id="name"
-      type="text"
-      name="name"
-      required
-      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-    >
-  </div>
+            <div class="text-center mb-10">
+                <h1 class="text-4xl font-bold text-white mb-4">Get Your Free Quote</h1>
+                <p class="text-xl text-white max-w-2xl mx-auto">
+                    Complete this form and we'll contact you within 24 hours with a detailed estimate.
+                </p>
+            </div>
 
-  <!-- email -->
-  <div>
-    <label for="email" class="block text-gray-700 font-medium mb-2">
-      email address *
-    </label>
-    <input
-      id="email"
-      type="email"
-      name="email"
-      required
-      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-    >
-  </div>
+            <form
+                name="quote"
+                method="POST"
+                action="/thank-you.html"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                enctype="multipart/form-data"
+                class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-lg shadow-lg"
+            >
 
-  <!-- phone -->
-  <div>
-    <label for="phone" class="block text-gray-700 font-medium mb-2">
-      phone number *
-    </label>
-    <input
-      id="phone"
-      type="tel"
-      name="phone"
-      required
-      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-    >
-  </div>
+                <!-- Required hidden input -->
+                <input type="hidden" name="form-name" value="quote">
 
-  <!-- address -->
-  <div>
-    <label for="address" class="block text-gray-700 font-medium mb-2">
-      property address *
-    </label>
-    <input
-      id="address"
-      type="text"
-      name="address"
-      required
-      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-    >
-  </div>
+                <!-- Honeypot -->
+                <p class="hidden">
+                    <label>
+                        Don’t fill this out:
+                        <input name="bot-field">
+                    </label>
+                </p>
 
-  <!-- service -->
-  <div class="md:col-span-2">
-    <label for="service" class="block text-gray-700 font-medium mb-2">
-      which service are you interested in? *
-    </label>
-    <select
-      id="service"
-      name="service"
-      required
-      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-    >
-      <option value="" disabled selected>-- please select --</option>
-      <option value="lawn-maintenance">lawn maintenance</option>
-      <option value="landscaping">landscaping installation</option>
-      <option value="seasonal-cleanup">seasonal cleanup</option>
-      <option value="hedge-trimming">hedge & shrub trimming</option>
-      <option value="other">other</option>
-    </select>
-  </div>
+                <!-- Name -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Full Name *
+                    </label>
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
+                    >
+                </div>
 
-  <!-- message -->
-  <div class="md:col-span-2">
-    <label for="message" class="block text-gray-700 font-medium mb-2">
-      tell us about your project
-    </label>
-    <textarea
-      id="message"
-      name="message"
-      rows="4"
-      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-    ></textarea>
-  </div>
+                <!-- Email -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Email Address *
+                    </label>
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
+                    >
+                </div>
 
-  <!-- upload -->
-  <div class="md:col-span-2">
-    <label for="photos" class="block text-gray-700 font-medium mb-2">
-      upload photos (optional)
-    </label>
-    <input
-      id="photos"
-      type="file"
-      name="photos"
-      multiple
-      accept="image/*"
-      class="w-full border p-3 rounded-lg"
-    >
-  </div>
+                <!-- Phone -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Phone Number *
+                    </label>
+                    <input
+                        type="tel"
+                        name="phone"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
+                    >
+                </div>
 
-  <!-- submit -->
-  <div class="md:col-span-2 text-center pt-4">
-    <button
-      type="submit"
-      class="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-3 rounded-lg transition"
-    >
-      get my free quote
-    </button>
+                <!-- Address -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Property Address *
+                    </label>
+                    <input
+                        type="text"
+                        name="address"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
+                    >
+                </div>
 
-    <p class="text-sm text-gray-500 mt-4">
-      we respect your privacy.
-    </p>
-  </div>
+                <!-- Service -->
+                <div class="md:col-span-2">
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Which Service Are You Interested In? *
+                    </label>
+                    <select
+                        name="service"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
+                    >
+                        <option value="" disabled selected>-- Please Select --</option>
+                        <option value="lawn-maintenance">Lawn Maintenance</option>
+                        <option value="landscaping">Landscaping Installation</option>
+                        <option value="seasonal-cleanup">Seasonal Cleanup</option>
+                        <option value="hedge-trimming">Hedge & Shrub Trimming</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-</form>
+                <!-- Message -->
+                <div class="md:col-span-2">
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Tell Us About Your Project
+                    </label>
+                    <textarea
+                        name="message"
+                        rows="4"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
+                    ></textarea>
+                </div>
+
+                <!-- File Upload -->
+                <div class="md:col-span-2">
+                    <label class="block text-gray-700 font-medium mb-2">
+                        Upload Photos (Optional)
+                    </label>
+
+                    <input
+                        type="file"
+                        name="photos"
+                        multiple
+                        accept="image/*"
+                        class="w-full border p-3 rounded-lg"
+                    >
+                </div>
+
+                <!-- Submit -->
+                <div class="md:col-span-2 text-center pt-4">
+                    <button
+                        type="submit"
+                        class="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-3 rounded-lg transition"
+                    >
+                        Get My Free Quote
+                    </button>
+
+                    <p class="text-sm text-gray-500 mt-4">
+                        We respect your privacy.
+                    </p>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+</html>
