@@ -22,141 +22,86 @@
                 </p>
             </div>
 
-            <form
-                name="quote"
-                method="POST"
-                action="/thank-you.html"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                enctype="multipart/form-data"
-                class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-lg shadow-lg"
-            >
+<form
+  name="quote"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  enctype="multipart/form-data"
+>
 
-                <!-- Required hidden input -->
-                <input type="hidden" name="form-name" value="quote">
+  <!-- Required hidden input -->
+  <input type="hidden" name="form-name" value="quote">
 
-                <!-- Honeypot -->
-                <p class="hidden">
-                    <label>
-                        Don’t fill this out:
-                        <input name="bot-field">
-                    </label>
-                </p>
+  <!-- Honeypot -->
+  <p class="hidden">
+    <label>
+      Don’t fill this out:
+      <input type="text" name="bot-field">
+    </label>
+  </p>
 
-                <!-- Name -->
-                <div>
-                    <label class="block text-gray-700 font-medium mb-2">
-                        Full Name *
-                    </label>
-                    <input
-                        type="text"
-                        name="name"
-                        required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-                    >
-                </div>
+  <p>
+    <label>
+      Full Name:
+      <input type="text" name="name" required />
+    </label>
+  </p>
 
-                <!-- Email -->
-                <div>
-                    <label class="block text-gray-700 font-medium mb-2">
-                        Email Address *
-                    </label>
-                    <input
-                        type="email"
-                        name="email"
-                        required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-                    >
-                </div>
+  <p>
+    <label>
+      Email Address:
+      <input type="email" name="email" required />
+    </label>
+  </p>
 
-                <!-- Phone -->
-                <div>
-                    <label class="block text-gray-700 font-medium mb-2">
-                        Phone Number *
-                    </label>
-                    <input
-                        type="tel"
-                        name="phone"
-                        required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-                    >
-                </div>
+  <p>
+    <label>
+      Phone Number:
+      <input type="tel" name="phone" required />
+    </label>
+  </p>
 
-                <!-- Address -->
-                <div>
-                    <label class="block text-gray-700 font-medium mb-2">
-                        Property Address *
-                    </label>
-                    <input
-                        type="text"
-                        name="address"
-                        required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-                    >
-                </div>
+  <p>
+    <label>
+      Property Address:
+      <input type="text" name="address" required />
+    </label>
+  </p>
 
-                <!-- Service -->
-                <div class="md:col-span-2">
-                    <label class="block text-gray-700 font-medium mb-2">
-                        Which Service Are You Interested In? *
-                    </label>
-                    <select
-                        name="service"
-                        required
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-                    >
-                        <option value="" disabled selected>-- Please Select --</option>
-                        <option value="lawn-maintenance">Lawn Maintenance</option>
-                        <option value="landscaping">Landscaping Installation</option>
-                        <option value="seasonal-cleanup">Seasonal Cleanup</option>
-                        <option value="hedge-trimming">Hedge & Shrub Trimming</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+  <p>
+    <label>
+      Service Needed:
+      <select name="service" required>
+        <option value="" disabled selected>Select a service</option>
+        <option value="lawn-maintenance">Lawn Maintenance</option>
+        <option value="landscaping">Landscaping</option>
+        <option value="seasonal-cleanup">Seasonal Cleanup</option>
+        <option value="hedge-trimming">Hedge & Shrub Trimming</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+  </p>
 
-                <!-- Message -->
-                <div class="md:col-span-2">
-                    <label class="block text-gray-700 font-medium mb-2">
-                        Tell Us About Your Project
-                    </label>
-                    <textarea
-                        name="message"
-                        rows="4"
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-green-500"
-                    ></textarea>
-                </div>
+  <p>
+    <label>
+      Project Details:
+      <textarea name="message"></textarea>
+    </label>
+  </p>
 
-                <!-- File Upload -->
-                <div class="md:col-span-2">
-                    <label class="block text-gray-700 font-medium mb-2">
-                        Upload Photos (Optional)
-                    </label>
+  <p>
+    <label>
+      Upload Photos (optional):
+      <input type="file" name="photos" multiple />
+    </label>
+  </p>
 
-                    <input
-                        type="file"
-                        name="photos"
-                        multiple
-                        accept="image/*"
-                        class="w-full border p-3 rounded-lg"
-                    >
-                </div>
+  <p>
+    <button type="submit">Get My Free Quote</button>
+  </p>
 
-                <!-- Submit -->
-                <div class="md:col-span-2 text-center pt-4">
-                    <button
-                        type="submit"
-                        class="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-3 rounded-lg transition"
-                    >
-                        Get My Free Quote
-                    </button>
-
-                    <p class="text-sm text-gray-500 mt-4">
-                        We respect your privacy.
-                    </p>
-                </div>
-
-            </form>
-        </section>
+</form>
     </main>
 
     <custom-footer></custom-footer>
