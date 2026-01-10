@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         quoteForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            form.submit();
             
             // Get form data
             const formData = new FormData(this);
