@@ -1,7 +1,7 @@
 ---
-title: GreenThumb Oasis 🌿
-colorFrom: purple
-colorTo: pink
+title: GreenThumb Oasis Pro 🌿
+colorFrom: pink
+colorTo: red
 emoji: 🐳
 sdk: static
 pinned: false
